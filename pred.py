@@ -9,8 +9,8 @@ import subprocess
 def pred_class(img):
     # load model
     if not os.path.isfile('all_fixed-vgg19.h5'):
-        subprocess.run(['curl --output model.h5 "https://github.com/syafa-kh/CV_ALLDemo/blob/main/all_fixed-vgg19.h5"'], shell=True)
-    model = load_model('model.h5', compile=False)
+        subprocess.run(['curl --output all_fixed-vgg19.h5 "https://github.com/syafa-kh/CV_ALLDemo/blob/main/all_fixed-vgg19.h5"'], shell=True)
+    model = load_model('all_fixed-vgg19.h5', compile=False)
 
     # prepare image
     img_prep = np.expand_dims(img_to_array(img), axis=0)
