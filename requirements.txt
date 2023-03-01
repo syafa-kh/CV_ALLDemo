@@ -1,3 +1,5 @@
+os
+subprocess
 numpy
 matplotlib
 tensorflow
