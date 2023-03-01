@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import tensorflow as tf
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.applications.vgg19 import preprocess_input
 
@@ -9,7 +10,7 @@ import urllib.request
 def load_model():
     if not os.path.isfile('model.h5'):
         urllib.request.urlretrieve('https://github.com/syafa-kh/CV_ALLDemo/blob/main/all_fixed-vgg19.h5', 'model.h5')
-    return tensorflow.keras.models.load_model('model.h5')
+    return tf.keras.models.load_model('model.h5')
 
 def pred_class(img):
     # load model
