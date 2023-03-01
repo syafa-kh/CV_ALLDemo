@@ -6,8 +6,8 @@ from explain import gradCAM
 
 import os
 import subprocess
-if not os.path.isfile('all_fixed-vgg19.h5'):
-    subprocess.run(['curl --output all_fixed-vgg19.h5 "https://github.com/syafa-kh/CV_ALLDemo/blob/main/all_fixed-vgg19.h5"'], shell=True)
+if not os.path.isfile('model.h5'):
+    subprocess.run(['curl --output model.h5 "https://github.com/syafa-kh/CV_ALLDemo/blob/main/all_fixed-vgg19.h5"'], shell=True)
 
 st.markdown('<h1 style="color:white;">🩸 VGG 19 Model for ALL Detection</h1>', unsafe_allow_html=True)
 st.markdown('<h3 style="color:#d8d8d8;">Find out whether a <span style="color: #f77c7c">Peripheral Blood Smear (PBS)</span> image classifies into <span style="color: #f77c7c">Benign, Early, Pre, or Pro</span</h2>', unsafe_allow_html=True)
