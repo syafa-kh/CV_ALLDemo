@@ -6,7 +6,7 @@ from tensorflow.keras.applications.vgg19 import preprocess_input
 
 import os
 import urllib.request
-@st.cache
+@st.cache_resource
 def load_model():
     if not os.path.isfile('model.h5'):
         urllib.request.urlretrieve('https://github.com/syafa-kh/CV_ALLDetection/raw/main/all_fixed-vgg19.h5', 'model.h5')
