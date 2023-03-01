@@ -1,0 +1,8 @@
+streamlit
+numpy
+matplotlib.cm
+tensorflow
+tensorflow.keras.utils
+tensorflow.keras.models
+tensorflow.keras.preprocessing.image
+tensorflow.keras.applications.vgg19
